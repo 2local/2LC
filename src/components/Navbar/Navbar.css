@@ -1,0 +1,162 @@
+.navbar-container {
+	box-shadow: 0px 5px 12px #f0f2f77c;
+	position: relative;
+	font-size: 15px;
+	/* overflow: hidden; */
+}
+
+.inner-nav {
+	width: 400px;
+	text-align: left;
+	margin-right: 3rem;
+}
+
+.brand {
+	cursor: pointer;
+}
+
+.nav-right {
+	margin: auto;
+	margin-right: 0;
+}
+
+.logo {
+	width: 21.8%;
+	text-align: left;
+}
+
+.navbar-links {
+	color: white;
+	text-decoration: none;
+	margin-right: 1rem;
+	margin-left: 0.3rem;
+}
+
+.dropdown {
+	color: white;
+	cursor: pointer;
+	position: relative;
+	text-align: start;
+	font-weight: bold;
+}
+
+.inner-div {
+	display: flex;
+	align-items: center;
+}
+
+.outer-div {
+	display: flex;
+	width: 60%;
+	font-weight: bold;
+}
+
+.navbar-nav > li {
+	float: left;
+	position: relative;
+}
+
+.navbar-light .navbar-nav .active a::after {
+	border-bottom: 5px solid #df642b;
+	bottom: -28px;
+	content: " ";
+	left: 0;
+	position: absolute;
+	right: 0;
+}
+
+.profile {
+	font-size: 16px;
+}
+
+.caret-color {
+	color: #53a8f0;
+	transform: scale(1.5);
+}
+
+.connect-wallet-btn {
+	height: 55px;
+	background: transparent linear-gradient(180deg, #53a8f0 0%, #2d7fc4 100%) 0%
+		0% no-repeat padding-box;
+	border-radius: 12px;
+	outline: none;
+	border: none;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	color: white;
+	font-weight: bold;
+}
+
+.nav-slider-container {
+	min-width: 100%;
+	overflow-y: auto;
+}
+
+.slider-slide {
+	min-width: fit-content;
+}
+
+.navbar-slider {
+	font-size: 12px;
+	font-weight: bold;
+	color: #1d2943;
+	text-decoration: none;
+}
+
+.navbar-slider:hover {
+	text-decoration: none;
+	color: #1d2943;
+}
+
+.navbar-slider-active {
+	font-size: 12px;
+	font-weight: bold;
+	color: #1d2943;
+	text-decoration: none;
+	padding-bottom: 0.8rem;
+	border-bottom: 5px solid #df642b;
+}
+
+.topbar-navigator-mobile {
+	display: none;
+}
+
+@media (max-width: 1420px) {
+	.topbar-navigator-mobile {
+		display: block;
+	}
+
+	.navbarText {
+		display: none !important;
+	}
+}
+
+@media (max-width: 768px) {
+	.inner-nav {
+		width: 20%;
+	}
+
+	.brand {
+		width: 40px;
+	}
+
+	.brand-logo {
+		width: 68px;
+	}
+
+	.profile-right {
+		display: none;
+	}
+
+	.connect-wallet-btn {
+		max-height: 50px;
+
+		/* padding-left: 1rem;
+		padding-right: 1rem; */
+		font-size: 10px;
+	}
+}
+
+.profile-img-avatar {
+	border-radius: 15px;
+}

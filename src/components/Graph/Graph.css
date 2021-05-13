@@ -1,0 +1,40 @@
+.graphContainer {
+	background-color: white;
+	border-radius: 12px;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	padding-right: 1rem;
+	/* padding-left: 0.6rem; */
+}
+
+.price {
+	font-size: 12px;
+	margin-bottom: 2rem;
+	margin-left: 1rem;
+	color: #000000;
+}
+
+.graphContainerMobile {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.graphContainerMobile {
+		display: block;
+		background-color: white;
+		border-radius: 12px;
+		padding-top: 1.5rem;
+		padding-bottom: 0.5rem;
+		padding-right: 1rem;
+		margin-left: -0.5rem;
+	}
+	.graphContainer {
+		display: none;
+	}
+	.price {
+		font-size: 12px;
+		margin-bottom: 1rem;
+		margin-left: 1rem;
+		color: #000000;
+	}
+}

@@ -1,0 +1,38 @@
+.layout-container {
+	position: relative;
+}
+
+.sidebar-desktop {
+	z-index: 2;
+}
+
+.sidebar-mobile {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.sidebar-desktop {
+		display: none;
+	}
+
+	.sidebar-mobile {
+		display: block;
+		z-index: 2;
+	}
+}
+.modal-back{
+	top: 0px;
+	left: 0px;
+	width: 100vw;
+	height: 100vh;
+	background: #000000 0% 0% no-repeat padding-box;
+	opacity: 0.75;
+	position: fixed;
+	z-index: 2;
+}
+
+.sidebar-container{
+	z-index: 9;
+	height: 100%;
+	overflow-y: auto;
+}

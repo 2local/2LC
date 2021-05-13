@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+.App {
+	text-align: center;
+	font-family: "Inter", sans-serif;
+}
+
+.App-logo {
+	height: 40vmin;
+	pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+
+.App-header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+
+.App-link {
+	color: #61dafb;
+}
+
+@keyframes close {
+	from {
+		transform: translateX(350px);
+	}
+	to {
+		transform: translateX(0px);
+		/* width: 100%; */
+	}
+}
+
+@keyframes body-right-open {
+	from {
+		transform: translateX(0px);
+	}
+	to {
+		transform: translateX(350px);
+		/* width: 80%; */
+	}
+}
+
+.body-right-open {
+	animation-name: body-right-open;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	background-color: red;
+}
+
+.body-right-close {
+	animation-name: close;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	background-color: red;
+}
+
+.body {
+	display: flex;
+	position: relative;
+	background-color: #fafbfe;
+	padding-bottom: 3rem;
+	/* background-color: black; */
+}
+
+.body-left {
+	width: 74%;
+}
+
+.body-left-notdashboard {
+	width: 98%;
+}
+
+@media (max-width: 768px) {
+	.body-left-notdashboard {
+		width: 90%;
+		margin: auto;
+	}
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}

@@ -1,0 +1,106 @@
+import React from "react";
+import { selectData, setSettingsTab } from "../../slices/slice";
+import { useDispatch, useSelector } from "react-redux";
+import List from "./List";
+import "./Sidebar.css";
+import { Link } from "react-router-dom";
+
+const Rectangle = "https://eu.ui-avatars.com/api/?name=Adam+Sydanus&background=edf6fd&color=53A8F0&font-size=0.33&bold=true&size=56";
+
+function SidebarMobile({ isOpen, setsubOpen, subOpen, setisOpen, modal, setModal }) {
+	const data = useSelector(selectData);
+	const dispatch = useDispatch();
+	return (
+		<>
+			<div
+				className={`sidebar-container d-flex    text-left  ${!isOpen ? "sidebar-close-mobile" : "sidebar-open-mobile"
+					}`}
+			>
+				<div className="innerContainer">
+					<div className="d-flex align-items-center">
+						<img
+							width="50px"
+							className="mr-3 profile-img-avatar"
+							src={Rectangle}
+							alt=""
+						/>
+						<div>
+							<div className="sidebar-profile-name">
+								Adam Sydanus
+							</div>
+							<div className="sidebar-myaccount">My Account</div>
+						</div>
+					</div>
+					<hr />
+					<div className="d-flex align-items-center justify-content-between pl-4 pt-3 pr-4 pb-3">
+						<div className="balanceStyle">Total Balance</div>
+						<div className="font-weight-bold balanceAmount">
+							$137.17
+						</div>
+						<i class="fas fa-eye eye"></i>
+						<i
+							onClick={() => {
+								setsubOpen(!subOpen);
+							}}
+							style={{
+								color: "#53A8F0",
+								transform: subOpen ? "rotate(180deg)" : "",
+							}}
+							class="fas fa-caret-right"
+						></i>
+					</div>
+
+					<div className="d-flex align-items-center justify-content-between pl-4 pt-3 pr-4 pb-3 wallet">
+						<span className="font-weight-bold addWallet">
+							Add new wallet
+						</span>
+						<i class="far fa-plus-square ml-5 addSquare" onClick={() => setModal(4)}></i>
+					</div>
+
+					<Link to="/exchange" className="sidebar-link" onClick={() => setisOpen(false)}>
+                        <List data={data} />
+                    </Link>
+
+					<hr />
+					<Link to="/help" className="dropdown-link">
+						{" "}
+						<div>
+							<i class="mr-2 fas fa-question-circle"></i> Help
+						</div>
+					</Link>
+
+					<Link
+						onClick={() => {
+							dispatch(setSettingsTab("General"));
+						}}
+						to="/settings"
+						className="dropdown-link"
+					>
+						<div>
+							<i class="mr-2 fas fa-cog"></i> Settings
+						</div>
+					</Link>
+					<hr />
+					<Link
+						to="/Login"
+						className="dropdown-link"
+					>
+						<div className="dropdown-bottom dropdown-link">
+							<i class="mr-2 fas fa-file-export"></i> Logout
+					</div>
+					</Link>
+				</div>
+			</div>
+
+			<div
+				className={`close-box ${isOpen ? "close-box-open" : "close-box-close"
+					}`}
+				onClick={() => setisOpen(false)}
+			>
+				<i class="fas fa-times"></i>
+			</div>
+		</>
+	);
+}
+
+export default SidebarMobile;

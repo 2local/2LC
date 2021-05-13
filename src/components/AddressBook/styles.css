@@ -1,0 +1,35 @@
+/* component container */
+.address-book-container {
+	flex-grow: 100;
+	font-size: 13px;
+}
+
+.addressBookContainer {
+	border-radius: 12px;
+	box-shadow: 0px 5px 12px #f0f2f77c;
+}
+
+/* header cell */
+/* body cell */
+.address-book-table .table-row .table-body-cell,
+.address-book-table .table-header .table-header-cell {
+	margin: 0px 10px;
+	word-break: break-all;
+}
+
+.address-book-table .table-body .table-row:nth-child(odd) {
+	background-color: rgba(240, 242, 248, 0.5);
+	border-radius: 4px;
+}
+
+/* action cell */
+.address-book-table .table-row .table-body-cell .action-cell .action-logo {
+	min-width: 30px;
+	min-height: 30px;
+	cursor: pointer;
+	border-radius: 4px;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	color: rgba(0, 0, 0, 0.35);
+	margin: 0px 20px 0px 0px;
+	padding: 0.5rem;
+}

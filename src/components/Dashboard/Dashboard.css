@@ -1,0 +1,273 @@
+.tab {
+	color: #9ea3ae;
+	font-weight: bold;
+	font-size: 15px;
+	width: 63%;
+}
+
+@media screen and (max-width: 1200px) {
+	.tab {
+		color: #9ea3ae;
+		font-weight: bold;
+		font-size: 15px;
+		width: 100%;
+	}
+}
+
+.dashboard-tab-mobile {
+	display: none;
+}
+
+.dashboard-bottom {
+	background: #ffffff 0% 0% no-repeat padding-box;
+	box-shadow: 0px 5px 12px #f0f2f77c;
+	min-height: 590px;
+	border-radius: 12px;
+	padding-bottom: 2rem;
+	margin-top: 1rem;
+	padding: 2rem;
+}
+
+.tab > div {
+	cursor: pointer;
+}
+
+.tab-active {
+	text-align: center;
+	border-bottom: 5px solid #df642b;
+	margin-bottom: -1.5rem;
+	color: #1d2943;
+}
+
+.heading {
+	font-size: 28px;
+	color: #1d2943;
+}
+
+.percentage {
+	color: #56e19f;
+}
+
+.code {
+	color: #a1a1a3;
+}
+
+.arrow-up {
+	color: #56e19f;
+}
+
+/* @keyframes dashboard-open {
+	from {
+		transform: translateX(0px);
+		width: 100%;
+	}
+	to {
+		transform: translateX(0px);
+		width: 60%;
+	}
+}
+
+@keyframes dashboard-close {
+	from {
+		transform: translateX(0px);
+		width: 60%;
+	}
+	to {
+		transform: translateX(0);
+		width: 100%;
+	}
+}
+
+@keyframes dashboard-open2 {
+	from {
+		transform: translateX(0px);
+		width: 72%;
+	}
+	to {
+		transform: translateX(0px);
+		width: 60%;
+	}
+}
+
+@keyframes dashboard-close2 {
+	from {
+		transform: translateX(0px);
+		width: 60%;
+	}
+	to {
+		transform: translateX(0);
+		width: 72%;
+	}
+} */
+
+.pencil {
+	color: white;
+	transform: scale(1);
+	background-color: #df642b;
+	padding: 0.3rem;
+	border-radius: 50%;
+}
+
+.dashboard {
+	flex-grow: 100%;
+	/* padding-left: 2rem; */
+	font-size: 14px;
+	flex-grow: 100;
+	width: 100%;
+	overflow: hidden;
+}
+
+/* .dashboard-open {
+	padding-left: 2rem;
+	padding-top: 2rem;
+	font-size: 14px;
+	animation-name: dashboard-open;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	overflow: hidden;
+}
+
+.dashboard-close {
+	padding-left: 2rem;
+	padding-top: 2rem;
+	font-size: 14px;
+	animation-name: dashboard-close;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	overflow: hidden;
+}
+
+.dashboard-open2 {
+	padding-left: 2rem;
+	padding-top: 2rem;
+	font-size: 14px;
+	animation-name: dashboard-open2;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	overflow: hidden;
+}
+
+.dashboard-close2 {
+	padding-left: 2rem;
+	padding-top: 2rem;
+	font-size: 14px;
+	animation-name: dashboard-close2;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	overflow: hidden;
+} */
+
+.top-section {
+	text-align: left;
+	display: flex;
+	align-items: center;
+}
+
+.title {
+	margin-left: 1rem;
+}
+
+.edit {
+	margin-left: 1rem;
+}
+.key {
+	margin-left: 1rem;
+}
+
+.graph {
+	display: flex;
+	text-align: left;
+	margin-top: 1rem;
+	border: 0.5px solid #dfe3eb;
+	border-radius: 5px;
+	padding-left: 1rem;
+}
+
+.btn-grp {
+	display: flex;
+	margin-top: 2rem;
+	justify-content: space-between;
+}
+
+.btn {
+	/* margin-right: 2rem; */
+	background-color: #4c566c;
+	border: 1px solid #4c566c;
+	width: 148px;
+	height: 46px;
+	color: white;
+	font-size: 14px;
+	border-radius: 7px;
+	font-family: "Inter", sans-serif;
+}
+
+.large-btn {
+	margin-top: 2rem;
+	width: 100%;
+	background-color: #4c566c;
+	color: white;
+	height: 35px;
+	border-radius: 7px;
+	font-size: 14px;
+	border: none;
+	margin-top: 10rem;
+	font-family: "Inter", sans-serif;
+}
+
+.load-transaction {
+	margin-top: 4rem;
+}
+
+@media (max-width: 922px) {
+	.dashboard-tab-mobile {
+		display: block;
+	}
+
+	.dashboard-tab {
+		display: none;
+	}
+
+	.heading {
+		font-size: 25px;
+	}
+
+	.pencil {
+		transform: scale(0.6);
+
+		padding: 0.5rem;
+	}
+
+	.code {
+		display: none;
+	}
+
+	.tab-active {
+		margin: auto;
+		margin-bottom: 0;
+		padding-bottom: 1rem;
+		width: fit-content;
+		text-align: center;
+		font-size: 12px;
+	}
+
+	.tab-inactive {
+		margin: auto;
+		width: fit-content;
+
+		margin-bottom: 0;
+		padding-bottom: 1rem;
+		font-size: 12px;
+
+		text-align: center;
+	}
+
+	.dashboard-bottom {
+		padding-bottom: 1rem;
+		margin-top: 1.7rem;
+		padding: 1rem;
+	}
+
+	.slider-slide {
+		min-width: fit-content;
+	}
+}
